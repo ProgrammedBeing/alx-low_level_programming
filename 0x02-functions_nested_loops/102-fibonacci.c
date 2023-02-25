@@ -14,10 +14,18 @@ int main(void)
 	printf("%ld, %ld,", f1, f2);
 	for (i = 3; i <= 50; i++)
 	{
-		printf(" %ld,", Nt);
-		f1 = f2;
-		f2 = Nt;
-		Nt = f1 + f2;
+		if (i == 50)
+		{
+			printf("%ld", Nt);
+			break;
+		}
+		else
+		{
+			printf(" %ld,", Nt);
+			f1 = f2;
+			f2 = Nt;
+			Nt = f1 + f2;
+		}
 	}
 	putchar('\n');
 	return (0);
