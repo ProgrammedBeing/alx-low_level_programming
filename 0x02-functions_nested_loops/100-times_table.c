@@ -9,7 +9,7 @@ void Valoutput(int n);
 
 void print_times_table(int n)
 {
-	int k, i, j;
+	int i, j;
 
 	if (n <= 15 && n >= 0)
 	{
