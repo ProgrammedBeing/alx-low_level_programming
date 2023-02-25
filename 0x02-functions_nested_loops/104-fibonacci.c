@@ -6,15 +6,15 @@
 
 int main(void)
 {
-	unsigned int f1 = 1;
-	unsigned int f2 = 2;
-	unsigned int Nt = f1 + f2;
+	unsigned long int f1 = 1;
+	unsigned long int f2 = 2;
+	unsigned long int Nt = f1 + f2;
 	int i;
 
-	printf("%u, %u, ", f1, f2);
+	printf("%lu, %lu, ", f1, f2);
 	for (i = 3; i <= 98; i++)
 	{
-		printf("%u, ", Nt);
+		printf("%lu, ", Nt);
 		f1 = f2;
 		f2 = Nt;
 		Nt = f1 + f2;
