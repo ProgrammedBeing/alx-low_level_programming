@@ -6,13 +6,13 @@
 
 int main(void)
 {
-	int f1 = 1;
-	int f2 = 2;
+	long int f1 = 1;
+	long int f2 = 2;
 	int i;
 	long int Nt = f1 + f2;
 
-	printf("%d, %d,", f1, f2);
-	for (i = 3; i < 50; i++)
+	printf("%ld, %ld,", f1, f2);
+	for (i = 3; i <= 50; i++)
 	{
 		printf(" %ld,", Nt);
 		f1 = f2;
