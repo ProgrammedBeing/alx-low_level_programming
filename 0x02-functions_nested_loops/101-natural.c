@@ -17,4 +17,5 @@ int main(void)
 		sum = multi3 + multi5;
 	}
 		printf("%d\n", sum);
+		return (0);
 }
