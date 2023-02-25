@@ -11,10 +11,10 @@ int main(void)
 	unsigned int Nt = f1 + f2;
 	int i;
 
-	printf("%d, %d, ", f1, f2);
+	printf("%u, %u, ", f1, f2);
 	for (i = 3; i <= 98; i++)
 	{
-		printf("%d, ", Nt);
+		printf("%u, ", Nt);
 		f1 = f2;
 		f2 = Nt;
 		Nt = f1 + f2;
