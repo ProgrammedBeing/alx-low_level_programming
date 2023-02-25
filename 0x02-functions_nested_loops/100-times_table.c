@@ -5,7 +5,7 @@
  * Return: Always 0 (success)
  */
 
-void Valoutput(int k);
+void Valoutput(int n);
 
 void print_times_table(int n)
 {
@@ -15,26 +15,10 @@ void print_times_table(int n)
 	{
 		for (i = 0; i <= n; i++)
 		{
-			for (j = 0; j <= n; j++)
+			_putchar('0');
+			for (j = 1; j <= n; j++)
 			{
-				k = i * j;
-				Valoutput(k);
-				if (j == n)
-					continue;
-				_putchar(',');
-				if (k / 10 == 0)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else if (((k / 10) >= 1 || k / 10 <= 9) && k < 100)
-				{
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else
-					_putchar(' ');
+				Valoutput(i * j);
 			}
 				_putchar('\n');
 		}
@@ -43,22 +27,33 @@ void print_times_table(int n)
 
 /**
  * Valoutput - Does the printing of the result only
- * @k: The variable holding the result
+ * @n: Parameter
  * Return: Nothing
  */
-void Valoutput(int k)
+void Valoutput(int n)
 {
-	if (k < 10)
-		_putchar((k % 10) + '0');
-	else if (k < 100)
+	if (n < 10)
 	{
-		_putchar((k / 10) + '0');
-		_putchar((k % 10) + '0');
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar((n % 10) + '0');
 	}
-	else
+	else if (n < 100 && n >= 10)
 	{
-		_putchar((k / 100) + '0');
-		_putchar(((k % 100) / 10) + '0');
-		_putchar(((k % 100) / 10) + '0');
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar((n / 10) + '0');
+		_putchar((n % 10) + '0');
+	}
+	else if (n >= 100 && n <= 999)
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar((n / 100) + '0');
+		_putchar(((n % 100) / 10) + '0');
+		_putchar(((n % 100) / 10) + '0');
 	}
 }
