@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (i == 50)
 		{
-			printf("%ld", Nt);
+			printf(" %ld", Nt);
 			break;
 		}
 		else
