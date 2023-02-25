@@ -6,7 +6,9 @@
 
 int main(void)
 {
-	int i, multi3, multi5, sum;
+	int i, sum;
+	int multi3 = 0;
+	int multi5 = 0;
 
 	for (i = 0; i < 1024; i++)
 	{
