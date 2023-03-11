@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * sqrt - Find the root of a number
+ * _sqrt - Find the root of a number
  * @number: Number that runs up till numberer inputted, n
  * @root: Number inputted
  * Return: root
