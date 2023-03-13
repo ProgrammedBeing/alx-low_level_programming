@@ -13,12 +13,7 @@ int main(int argc, char *argv[])
 {
 	int mult;
 
-	if (argc == 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else if (argc <= SIZE)
+	if (argc == SIZE)
 	{
 		mult = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", mult);
