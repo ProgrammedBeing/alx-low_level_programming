@@ -27,5 +27,5 @@ int main(int argc, char **argv)
 	mult = a * b;
 
 	printf("%d\n", mult);
-        return (0);
+	return (0);
 }
