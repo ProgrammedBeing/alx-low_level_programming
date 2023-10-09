@@ -5,7 +5,6 @@
  * @s1: String 1
  * @s2: String 2
  * @n: Number of bytes to be copied from s2.
- *
  * Description: concatenates two strings.
  *
  * Return: Return pointer containing s1, followed by the first n bytes of s2.
@@ -40,7 +39,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	if (n > len2)
-		 n = len2;
+		n = len2;
 
 	for (i = 0; i < n; i++)
 	{
