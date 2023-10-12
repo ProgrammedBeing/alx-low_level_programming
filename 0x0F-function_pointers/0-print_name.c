@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "function_pointers.h"
 /**
  * print_name - Entry point.
  * @name: A string containing the name to be printed.
