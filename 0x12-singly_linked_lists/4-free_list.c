@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * void free_list(list_t *head); - Entry point
+ * free_list - Entry point
  *
  * @head: Pinter to first node
  * Description: frees a list_t list.
@@ -19,5 +19,5 @@ void free_list(list_t *head)
 		head = head->next;
 		free(current->str);
 		free(current);
-	}	
+	}
 }
