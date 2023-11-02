@@ -41,7 +41,7 @@ int main(int argc, char **av)
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "%s\n", message);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
 		exit(97);
 	}
 	fd_source = open(file_from, O_RDONLY);
